@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>The Butler &middot; Your blogging assistant</title>
+    <title>Sending Slack Messages in Python &middot; The Butler</title>
     <meta name="description" content="A ready to use static blog, powered by Cecil." />
-    <meta name="keywords" content="Cecil, Static Site Generator, SSG" />
+    <meta name="keywords" content="python, slack, Cecil, Static Site Generator, SSG" />
     <meta name="author" content="Arnaud Ligny" />
-    <link rel="canonical" type="text/html" title="The Butler &middot; Your blogging assistant" href="/" />
-    <link rel="alternate" type="application/atom+xml" title="The Butler &middot; Your blogging assistant (ATOM)" href="/atom.xml" />
+    <link rel="canonical" type="text/html" title="Sending Slack Messages in Python &middot; The Butler" href="/blog/sending-slack-messages-in-python/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="The Butler" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Butler &middot; Your blogging assistant" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Sending Slack Messages in Python &middot; The Butler" />
     <meta property="og:description" content="A ready to use static blog, powered by Cecil." />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/blog/sending-slack-messages-in-python/" />
     <meta name="twitter:card" content="summary" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -41,7 +40,7 @@
           <p class="lead">A ready to use static blog, powered by Cecil.</p>
         </div>
         <nav class="sidebar-nav">
-          <a class="sidebar-nav-item active item-weight-0" href="/">Home</a>
+          <a class="sidebar-nav-item item-weight-0" href="/">Home</a>
           <a class="sidebar-nav-item item-weight-100" href="/blog/">Blog</a>
           <a class="sidebar-nav-item item-weight-999" href="/about/">About</a>
         </nav>
@@ -49,11 +48,9 @@
       </div>
     </div>
     <div class="content container">
-      <div class="posts">
-        <div class="post">
-          <h1 class="post-title"><a href="/blog/sending-slack-messages-in-python/">Sending Slack Messages in Python</a></h1>
-          <span class="post-date">25 Mar 2021</span>
-          <p>In this post I will demonstrate how to send messages to slack using python based on the status of an event. </p>
+      <h1 class="page-title">Sending Slack Messages in Python</h1>
+      <span class="post-date">25 Mar 2021</span>
+      <p>In this post I will demonstrate how to send messages to slack using python based on the status of an event. </p>
 <p>We will keep it basic, that when something is down or up, it should send a slack message with the status, message, color and embed your grafana dashboard links inside the alert (or any links that you would like).</p>
 <h2>Create a Webhook</h2>
 <p>From a previous post on <a href="https://blog.ruanbekker.com/blog/2019/04/18/setup-a-slack-webhook-for-sending-messages-from-applications/">how to use curl to send slack messages</a> I showed how to create your webhook, so you can just follow that post if you want to follow along.</p>
@@ -136,19 +133,10 @@ alert_to_slack(ALERT_STATE, "https://grafana-logs.dashboard.local", "https://gra
 <p><img src="https://user-images.githubusercontent.com/567298/98374958-1eb85e00-204a-11eb-8ab0-c6a8a0640752.png" alt="image" width="471" loading="lazy" /></p>
 <h2>Thanks</h2>
 <p>That was a basic example on how you can use python to send slack messages.</p>
-          <footer class="readmore">
-            <a href="/blog/sending-slack-messages-in-python/#more">Read more ›</a>
-          </footer>
-        </div>
-      </div>
-      <div class="lastposts">
-        <h2>Recent posts</h2>
-        <ul>
-          <li><a href="/blog/princess-mononoke/">Princess Mononoke</a></li>
-          <li><a href="/blog/daft-punk/">Daft Punk</a></li>
-          <li><a href="/blog/doom/">Doom</a></li>
-        </ul>
-      </div>
+      <p>
+        <a href="/tags/python/">#python</a>&nbsp;
+        <a href="/tags/slack/">#slack</a>&nbsp;
+      </p>
     </div>
   </body>
 </html>
